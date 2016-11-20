@@ -25,15 +25,36 @@ p {
   color: white;
 }
 
+.row {
+  width: 100%;
+}
 
-/********** Medium devices only **********/
-@media (min-width: 950px) and (max-width: 1199px) {
-  .col-md-1, .col-md-2, .col-md-3,{
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-md-1, .col-md-2, .col-md-3, {
     float: left;
     border: 1px solid green;
   }
   .col-md-1 {
-    width: 33.33;
+    width: 33.33%;
+  }
+  .col-md-2 {
+    width: 66.66%;
+  }
+  .col-md-3 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 950px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-md-1 {
+    width: 33.33%;
   }
   .col-md-2 {
     width: 66.66%;
@@ -56,4 +77,3 @@ p {
 
 </body>
 </html>
-
